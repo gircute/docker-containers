@@ -32,4 +32,4 @@ RUN (mkdir -p /root/.ssh/; \
 RUN echo "root:password" | chpasswd
 
 EXPOSE 22
-CMD service crond start; /usr/sbin/sshd -D
+CMD service crond start; /usr/sbin/sshd -D; /etc/rc.d/rc.local
